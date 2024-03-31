@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline } from "@mui/material";
+import "./App.css";
+import Header from "./components/header";
+import FormBuilder from "./components/views/FormBuilder";
+import Main from "./components/views/Main";
+import { Routes, Route } from "react-router-dom";
+import Preview from "./components/views/Preview";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <CssBaseline />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/form/1" element={<FormBuilder />} />
+        <Route path="/form/1/preview" element={<Preview />} />
+      </Routes>
+    </>
   );
 }
 

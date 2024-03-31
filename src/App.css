@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.css-1l9ohcm {
+  height: 600px;
+  overflow-y: scroll;
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 300px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
